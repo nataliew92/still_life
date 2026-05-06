@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Flora Gorgeous Gardenia Eau de Parfum</title>
+  <meta name="description"
+    content="Gorgeous Gardenia by Flora. A luminous floral fragrance capturing the essence of a sunlit garden in bloom.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js" defer></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+  <!--
+    Site header — contains the brand logo and primary navigation.
+    A <header> at body level represents the page's banner/masthead.
+  -->
+  <header class="nav" id="nav">
+    <a href="#" class="nav__logo">
+      Flora <span aria-hidden="true">✿</span>
+    </a>
+
+    <nav aria-label="Main">
+      <ul class="nav__links" role="list">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#scent">The Scent</a></li>
+        <li><a href="#feature">The Bottle</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+
+    <a href="#buy" class="nav__cta">Buy Now</a>
+  </header>
+
+
+  <main id="main">
+
+    <!-- Hero — uses <header> within the section for the intro heading group -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <img src="images/perfume_transparent.png" alt="The Gorgeous Gardenia perfume bottle" class="hero__bottle">
+
+        <header class="hero__text">
+          <h1 id="hero-title" class="hero__title">Gorgeous<br>Gardenia</h1>
+          <p class="hero__subtitle">Eau de Parfum</p>
+
+          <div class="hero__cta-group">
+            <a href="#buy" class="btn btn--outline">Shop Now</a>
+            <a href="#story" class="btn btn--outline">Our Story</a>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider__line"></span></div>
+
+
+    <!-- Story -->
+    <section class="story" id="story" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="story__grid">
+
+          <div class="story__image-wrapper">
+            <img src="images/perfume_story.png" alt="A close-up of gardenia petals on a marble surface"
+              class="story__image" width="600" height="800">
+          </div>
+
+          <div class="story__text">
+            <h2 id="story-heading">Our Story</h2>
+
+            <p>
+              Every bottle of Gorgeous Gardenia begins with a single walk through the gardens of the French Riviera at
+              first light.
+              It is in those quiet, dew-drenched moments that the true character of the gardenia reveals itself —
+              delicate, radiant, and wholly unforgettable.
+            </p>
+
+            <blockquote class="story__quote">
+              <p>
+                "I wanted to bottle that feeling. The warmth of sunlight on white petals, and the sweetness of something
+                completely pure."
+              </p>
+            </blockquote>
+
+            <p>
+              Gorgeous Gardenia is more than a fragrance. It is an invitation to pause. To feel the softness of the
+              world. To carry a bloom with you, wherever you go.
+            </p>
+
+            <a href="#scent" class="btn btn--dark-outline btn--top-margin">
+              Explore the Scent Notes
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider__line"></span></div>
+
+
+    <!-- Scent notes -->
+    <section class="scent" id="scent" aria-labelledby="scent-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 id="scent-heading">Scent Notes</h2>
+          <p class="section-lead">
+            A carefully composed floral accord, layered from the first breath to the lasting warmth of the day.
+          </p>
+        </header>
+
+        <ul class="scent__accordion" role="list">
+
+          <li class="scent__item is-active" data-note="top">
+            <button class="scent__trigger" aria-expanded="true" aria-controls="scent-panel-top">
+              <span class="scent__swatch" aria-hidden="true"></span>
+              <span class="scent__title">Top Notes — Peach Blossom &amp; Mandarin</span>
+              <span class="scent__chevron" aria-hidden="true">+</span>
+            </button>
+
+            <div class="scent__panel" id="scent-panel-top">
+              <img src="images/scent_peach.png" alt="Peach blossoms and mandarins, laying on cream coloured silk"
+                class="scent__panel-image">
+              <div class="scent__panel-content">
+                <p class="scent__label">Top Notes</p>
+                <p class="scent__description">
+                  A bright, sparkling opening of sun-ripened peach blossom and fresh mandarin. Light and effervescent —
+                  the first impression of something beautiful.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="scent__item" data-note="heart">
+            <button class="scent__trigger" aria-expanded="false" aria-controls="scent-panel-heart">
+              <span class="scent__swatch" aria-hidden="true"></span>
+              <span class="scent__title">Heart Notes — Gardenia &amp; White Rose</span>
+              <span class="scent__chevron" aria-hidden="true">+</span>
+            </button>
+
+            <div class="scent__panel" id="scent-panel-heart">
+              <img src="images/scent_white.png" alt="White gardenia and rose blooms, laying on cream coloured silk"
+                class="scent__panel-image">
+              <div class="scent__panel-content">
+                <p class="scent__label">Heart Notes</p>
+                <p class="scent__description">
+                  The soul of the fragrance. Pure, luminous gardenia blooms entwined with the gentleness of white rose —
+                  radiant, feminine, and endlessly romantic.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="scent__item" data-note="base">
+            <button class="scent__trigger" aria-expanded="false" aria-controls="scent-panel-base">
+              <span class="scent__swatch" aria-hidden="true"></span>
+              <span class="scent__title">Base Notes — Blonde Wood &amp; Musk</span>
+              <span class="scent__chevron" aria-hidden="true">+</span>
+            </button>
+
+            <div class="scent__panel" id="scent-panel-base">
+              <img src="images/scent_wood.png" alt="Blonde wood and musk, laying on cream coloured silk"
+                class="scent__panel-image">
+              <div class="scent__panel-content">
+                <p class="scent__label">Base Notes</p>
+                <p class="scent__description">
+                  A soft, warm foundation of pale blonde wood and clean musk, leaving a lingering trail that feels as
+                  gentle as a whisper on the skin.
+                </p>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider__line"></span></div>
+
+
+    <!-- Product feature: 3D model -->
+    <section class="feature" id="feature" aria-labelledby="feature-heading">
+      <div class="container">
+        <div class="feature__grid">
+
+          <div class="feature__image-wrapper">
+            <model-viewer src="images/Meshy_AI_Gucci_Flora_Perfume_B_0325190203_texture.glb"
+              alt="Interactive 3D model of the Gorgeous Gardenia perfume bottle" ar
+              ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" shadow-intensity="1"
+              auto-rotate>
+            </model-viewer>
+          </div>
+
+          <div class="feature__text">
+            <h2 id="feature-heading">As Beautiful as the Scent Within</h2>
+
+            <p>
+              The Gorgeous Gardenia bottle is a work of art in itself. Crafted in soft blush-pink glass with a faceted
+              gold cap, it is designed to be displayed as much as worn.
+            </p>
+
+            <ul class="feature__specs" role="list">
+              <li>Available in 30ml, 50ml and 100ml</li>
+              <li>Eau de Parfum</li>
+              <li>Blush-pink faceted glass bottle</li>
+              <li>Polished gold metal cap</li>
+              <li>6–8 hour wear on skin</li>
+              <li>Presented in a signature gift box</li>
+            </ul>
+
+            <a href="#buy" class="btn btn--outline btn--top-margin">Shop Now</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider__line"></span></div>
+
+
+    <!-- Reviews -->
+    <section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <h2 id="reviews-heading">Customer Reviews</h2>
+        </header>
+
+        <div class="reviews__aggregate">
+          <p class="reviews__aggregate-score">
+            <span aria-hidden="true">4.9</span>
+            <span class="visually-hidden">Average rating: 4.9 out of 5</span>
+          </p>
+          <p class="reviews__aggregate-stars" aria-hidden="true">★★★★★</p>
+          <p class="reviews__aggregate-count">Based on 1,247 reviews</p>
+        </div>
+
+        <ul class="reviews__grid" role="list">
+
+          <li>
+            <article class="reviews__card animate-in delay-1">
+              <p class="reviews__stars">
+                <span aria-hidden="true">★★★★★</span>
+                <span class="visually-hidden">Rated 5 out of 5 stars</span>
+              </p>
+              <blockquote class="reviews__text">
+                <p>
+                  "This is the most beautiful fragrance I have ever worn. It is soft and feminine without being
+                  overpowering. I receive compliments every single time."
+                </p>
+              </blockquote>
+              <footer class="reviews__author">
+                <strong>Charlotte W.</strong>
+                <span>London, UK. Verified Purchase</span>
+              </footer>
+            </article>
+          </li>
+
+          <li>
+            <article class="reviews__card animate-in delay-2">
+              <p class="reviews__stars">
+                <span aria-hidden="true">★★★★★</span>
+                <span class="visually-hidden">Rated 5 out of 5 stars</span>
+              </p>
+              <blockquote class="reviews__text">
+                <p>
+                  "I have been searching for my signature scent for years. Gorgeous Gardenia is it. There is something
+                  magical about the way it blooms on your skin throughout the day."
+                </p>
+              </blockquote>
+              <footer class="reviews__author">
+                <strong>Isabelle M.</strong>
+                <span>Paris, France. Verified Purchase</span>
+              </footer>
+            </article>
+          </li>
+
+          <li>
+            <article class="reviews__card animate-in delay-3">
+              <p class="reviews__stars">
+                <span aria-hidden="true">★★★★★</span>
+                <span class="visually-hidden">Rated 5 out of 5 stars</span>
+              </p>
+              <blockquote class="reviews__text">
+                <p>
+                  "The packaging alone is worth it... but the scent is something else entirely. Romantic, delicate, and
+                  long-lasting. I have already bought it as a gift three times."
+                </p>
+              </blockquote>
+              <footer class="reviews__author">
+                <strong>Sophia R.</strong>
+                <span>New York, USA. Verified Purchase</span>
+              </footer>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="divider__line"></span></div>
+
+
+    <!-- Buy now -->
+    <section class="buy" id="buy" aria-labelledby="buy-heading">
+      <div class="buy__content container">
+
+        <h2 id="buy-heading">Shop Now</h2>
+        <p class="buy__lead">Choose your size and make it yours.</p>
+
+        <p class="buy__price" id="price-display"><sup>£</sup>68</p>
+
+        <div class="buy__sizes" role="group" aria-label="Select bottle size">
+          <button class="buy__size-btn active" onclick="selectSize(this, '£68')" aria-pressed="true">30ml</button>
+          <button class="buy__size-btn" onclick="selectSize(this, '£98')" aria-pressed="false">50ml</button>
+          <button class="buy__size-btn" onclick="selectSize(this, '£138')" aria-pressed="false">100ml</button>
+        </div>
+
+        <div class="buy__actions">
+          <button type="button" class="btn btn--primary" onclick="showNotification()">
+            Add to Bag
+          </button>
+          <a href="#story" class="btn btn--outline">Learn More</a>
+        </div>
+
+        <p class="buy__note">
+          This is a fictional product and website created for educational purposes. The "Add to Bag" button is
+          non-functional and does not lead to a real purchase process.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Site footer — contentinfo for the page -->
+  <footer class="footer">
+    <p class="footer__logo">Flora <span aria-hidden="true">✿</span></p>
+    <p class="footer__tagline">Fragrance for the romantic soul</p>
+
+    <nav aria-label="Footer">
+      <ul class="footer__links" role="list">
+        <li><a href="#main">Home</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#scent">Scent Notes</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#buy">Shop</a></li>
+      </ul>
+    </nav>
+
+    <p class="footer__disclaimer">
+      This website is a fictional creation produced as part of a web development project and is not affiliated with,
+      endorsed by, or connected to Gucci or any other fragrance brand.
+      All content has been created solely for educational and assessment purposes. All images are either original,
+      enhanced with AI or generated with Google Gemini Nano Banana and are not real products.
+    </p>
+  </footer>
+</body>
+
+</html>
