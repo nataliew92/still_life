@@ -1,6 +1,4 @@
-/* Custom properties */
 :root {
-  /* Colours */
   --colour-cream:      #fdf6f0;
   --colour-blush:      #f2c4ce;
   --colour-rose:       #c9788a;
@@ -12,7 +10,7 @@
   --colour-rose-dark:  #8a3749;  
   --colour-blush-light:#fdf6f7;  
 
-  /* Typography */
+
   --font-display: 'Cinzel', Georgia, serif;
   --font-body:    'Cormorant Garamond', 'Times New Roman', serif;
   --font-xs: 0.75rem;
@@ -20,11 +18,11 @@
   --font-md: 0.95rem;
   --font-lg: 1.2rem;
 
-  /* Letter spacing */
+
   --ls-base: 0.1em;
   --ls-wide: 0.2em;
 
-  /* Spacing */
+
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
@@ -35,7 +33,6 @@
 }
 
 
-/* Reset and base styles */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -226,16 +223,14 @@ p {
   background-color: var(--colour-dark);
 }
 
-/* Background image layer */
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background: url('../images/hero_renaissance3.png') center / cover no-repeat;
   animation: hero-zoom 25s ease-in-out infinite alternate;
-}
+} 
 
-/* Gradient overlay — darkens image so text is readable */
 .hero::after {
   content: '';
   position: absolute;
@@ -251,7 +246,7 @@ p {
 
 .hero__content {
   position: relative;
-  z-index: 2; /* sits above both pseudo-elements */
+  z-index: 2; 
   width: 100%;
   max-width: 1100px;
   padding: var(--space-md);
@@ -307,9 +302,7 @@ p {
 }
 
 
-/* =============================================================================
-   BUTTONS
-   ============================================================================= */
+/* buttons */
 
 .btn {
   font-family: var(--font-body);
@@ -323,23 +316,48 @@ p {
   transition: var(--transition-base);
 }
 
-.btn--primary             { background: var(--colour-gold); color: var(--colour-white); }
-.btn--primary:hover       { background: var(--colour-gold-dark); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(200, 169, 110, 0.3); }
-.btn--outline             { background: transparent; color: var(--colour-white); border: 1px solid rgba(255, 255, 255, 0.7); }
-.btn--outline:hover       { background: rgba(255, 255, 255, 0.15); }
-.btn--dark-outline        { background: transparent; color: var(--colour-rose); border: 1px solid var(--colour-rose); }
-.btn--dark-outline:hover  { background: var(--colour-rose); color: var(--colour-white); }
-.btn--top-margin          { margin-top: var(--space-md); }
+.btn--primary             { 
+  background: var(--colour-gold); 
+  color: var(--colour-white); 
+}
+
+.btn--primary:hover       { 
+  background: var(--colour-gold-dark); 
+  transform: translateY(-2px); 
+  box-shadow: 0 8px 25px rgba(200, 169, 110, 0.3); 
+}
+
+.btn--outline             { 
+  background: transparent; color: var(--colour-white); 
+  border: 1px solid rgba(255, 255, 255, 0.7); 
+}
+
+.btn--outline:hover       { 
+  background: rgba(255, 255, 255, 0.15); 
+}
+
+.btn--dark-outline        { 
+  background: transparent; 
+  color: var(--colour-rose); 
+  border: 1px solid var(--colour-rose); 
+}
+
+.btn--dark-outline:hover  { 
+  background: var(--colour-rose); 
+  color: var(--colour-white); 
+}
+
+.btn--top-margin          { 
+  margin-top: var(--space-md); 
+}
 
 
-/* =============================================================================
-   STORY
-   ============================================================================= */
+/* story */
 
 .story {
   padding: var(--space-lg) var(--space-sm);
   background: var(--colour-cream);
-  transform: translateZ(0); /* own GPU layer prevents hero animation bleed */
+  transform: translateZ(0);
 }
 @media (min-width: 768px) {
   .story { padding: var(--space-xl) var(--space-md); }
@@ -356,11 +374,11 @@ p {
 
 .story__image-wrapper {
   position: relative;
-  order: 2; /* image below text on mobile, right column on desktop */
+  order: 2;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2)) brightness(0.9) saturate(0.85);
 }
 
-/* Gradient tint over the image */
+
 .story__image-wrapper::after {
   content: '';
   position: absolute;
@@ -382,7 +400,7 @@ p {
 }
 
 .story__text {
-  order: 1; /* text first on mobile, left column on desktop */
+  order: 1; 
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -401,9 +419,7 @@ p {
 }
 
 
-/* =============================================================================
-   SCENT NOTES
-   ============================================================================= */
+/* scent notes */
 
 .scent {
   padding: var(--space-lg) var(--space-sm);
@@ -425,9 +441,17 @@ p {
   overflow: hidden;
 }
 
-.scent__item[data-note="top"]   { --accent: #f8c4a8; } /* peach */
-.scent__item[data-note="heart"] { --accent: #f4a7b9; } /* gardenia pink */
-.scent__item[data-note="base"]  { --accent: #d4b896; } /* warm wood */
+.scent__item[data-note="top"]   { 
+  --accent: #f8c4a8; 
+}
+
+.scent__item[data-note="heart"] { 
+  --accent: #f4a7b9; 
+} 
+
+.scent__item[data-note="base"]  { 
+  --accent: #d4b896; 
+}
 
 .scent__trigger {
   width: 100%;
@@ -444,7 +468,9 @@ p {
   font-family: var(--font-body);
 }
 
-.scent__trigger:hover { background: rgba(242, 196, 206, 0.1); }
+.scent__trigger:hover { 
+  background: rgba(242, 196, 206, 0.1); 
+}
 
 .scent__swatch {
   width: 16px;
@@ -481,13 +507,13 @@ p {
   .scent__panel { grid-template-columns: auto 1fr; }
 }
 
-/* Alternate layout — even items have image on the right */
+
 @media (min-width: 768px) {
   .scent__item:nth-child(even) .scent__panel { grid-template-columns: 1fr auto; }
   .scent__item:nth-child(even) .scent__panel .scent__panel-image { order: 2; }
 }
 
-/* Hidden on mobile, shown from tablet up */
+
 .scent__panel-image {
   display: none;
   width: 80%;
@@ -495,7 +521,6 @@ p {
   aspect-ratio: 3/4;
   object-fit: cover;
   border-radius: 50%;
-  /* fixed: two filter declarations were here — second was overwriting first */
   filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.1)) saturate(0.95) blur(0.65px);
   opacity: 0;
   transform: translateY(8px);
@@ -535,7 +560,7 @@ p {
 }
 
 .scent__item.is-active .scent__chevron {
-  transform: rotate(45deg); /* + becomes × */
+  transform: rotate(45deg);
 }
 
 .scent__item.is-active .scent__panel {
@@ -551,9 +576,7 @@ p {
 }
 
 
-/* =============================================================================
-   PRODUCT FEATURE
-   ============================================================================= */
+/* product feature */
 
 .feature {
   padding: var(--space-lg) var(--space-sm);
@@ -587,10 +610,9 @@ p {
   width: 100%;
   aspect-ratio: 3/4;
   position: relative;
-  z-index: 2; /* sits above the ::after glow halo */
+  z-index: 2;
 }
 
-/* Decorative glow halo behind the model viewer */
 .feature__image-wrapper::after {
   content: '';
   position: absolute;
@@ -608,8 +630,14 @@ p {
   .feature__text { text-align: left; }
 }
 
-.feature__text h2 { color: var(--colour-white); margin-bottom: var(--space-sm); }
-.feature__text p  { color: rgba(255, 255, 255, 0.65); margin-bottom: var(--space-sm); }
+.feature__text h2 { 
+  color: var(--colour-white); 
+  margin-bottom: var(--space-sm); 
+}
+.feature__text p  { 
+  color: rgba(255, 255, 255, 0.65); 
+  margin-bottom: var(--space-sm); 
+}
 
 .feature__specs {
   margin: var(--space-md) 0;
@@ -626,7 +654,9 @@ p {
   justify-content: center;
 }
 @media (min-width: 768px) {
-  .feature__specs li { justify-content: flex-start; }
+  .feature__specs li { 
+    justify-content: flex-start; 
+  }
 }
 
 .feature__specs li::before {
@@ -637,9 +667,7 @@ p {
 }
 
 
-/* =============================================================================
-   REVIEWS
-   ============================================================================= */
+/* reviews */
 
 .reviews {
   padding: var(--space-lg) var(--space-sm);
@@ -678,10 +706,14 @@ p {
   gap: var(--space-md);
 }
 @media (min-width: 768px) {
-  .reviews__grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews__grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
 }
 @media (min-width: 1024px) {
-  .reviews__grid { grid-template-columns: repeat(3, 1fr); }
+  .reviews__grid { 
+    grid-template-columns: repeat(3, 1fr); 
+  }
 }
 
 .reviews__card {
@@ -729,9 +761,7 @@ p {
 }
 
 
-/* =============================================================================
-   BUY NOW
-   ============================================================================= */
+/* buy now */
 
 .buy {
   padding: var(--space-lg) var(--space-sm);
@@ -757,11 +787,13 @@ p {
   pointer-events: none;
 }
 
-.buy h2 { color: var(--colour-white); }
+.buy h2 { 
+  color: var(--colour-white); 
+}
 
 .buy__content {
   position: relative;
-  z-index: 2; /* sits above ::before watermark */
+  z-index: 2; 
 }
 
 .buy__lead {
@@ -828,9 +860,7 @@ p {
 }
 
 
-/* =============================================================================
-   FOOTER
-   ============================================================================= */
+/* footer */
 
 .footer {
   background: var(--colour-dark);
@@ -874,7 +904,9 @@ p {
   transition: var(--transition-base);
 }
 
-.footer__links a:hover { color: var(--colour-gold); }
+.footer__links a:hover { 
+  color: var(--colour-gold); 
+}
 
 .footer__disclaimer {
   font-size: var(--font-xs);
@@ -886,9 +918,7 @@ p {
 }
 
 
-/* =============================================================================
-   NOTIFICATION (dynamically created by JS for the demo "Add to Bag" button)
-   ============================================================================= */
+/* add to bag notification */
 
 .notification {
   position: fixed;
@@ -908,34 +938,56 @@ p {
 }
 
 
-/* =============================================================================
-   ANIMATIONS
-   ============================================================================= */
+/* animations */
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to   { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to   { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
 }
 
 @keyframes hero-zoom {
-  from { transform: scale(1.1); }
-  to   { transform: scale(1.3); }
+  from { 
+    transform: scale(1.1); 
+  }
+  to   { 
+    transform: scale(1.3); 
+  }
 }
 
-.animate-in { animation: fadeIn 0.8s ease both; }
-.delay-1    { animation-delay: 0.1s; }
-.delay-2    { animation-delay: 0.2s; }
-.delay-3    { animation-delay: 0.3s; }
+.animate-in { 
+  animation: fadeIn 0.8s ease both; 
+}
+
+.delay-1    { 
+  animation-delay: 0.1s; 
+}
+
+.delay-2    { 
+  animation-delay: 0.2s; 
+}
+
+.delay-3    { 
+  animation-delay: 0.3s; 
+}
 
 
-/* =============================================================================
-   ACCESSIBILITY
-   ============================================================================= */
+/* accessibility */
 
 :focus-visible {
   outline: 2px solid var(--colour-gold);
