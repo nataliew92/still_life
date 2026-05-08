@@ -3,7 +3,7 @@
   --colour-blush:      #f2c4ce;
   --colour-rose:       #c9788a;
   --colour-dark:       #2c1a1d;
-  --colour-muted:      #9a7a82;
+  --colour-muted:      #755a61;
   --colour-gold:       #c8a96e;
   --colour-white:      #ffffff;
   --colour-gold-dark:  #b9934a;  
@@ -407,8 +407,13 @@ p {
   .story__text { text-align: left; }
 }
 
-.story__text h2 { margin-bottom: var(--space-sm); }
-.story__text p  { margin-bottom: var(--space-sm); }
+.story__text h2 { 
+  margin-bottom: var(--space-sm); 
+}
+
+.story__text p  { 
+  margin-bottom: var(--space-sm); 
+}
 
 .story__quote {
   font-family: var(--font-display);
